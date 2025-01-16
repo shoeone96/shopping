@@ -26,18 +26,44 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width:48rem) {
+.flag {
+    color: white;
+}
+
+.mobile-footer {
+    border-top: 1px solid #392d23;
+    color: white;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    display: none;
+}
+
+@media screen and (max-width: 48rem) {
+    .second-line {
+        padding: 0 2rem;
+    }
+
+    .flag {
+        display: none;
+    }
+
     .first-line {
         text-align: center;
     }
 
-    .second-line {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        border-bottom: 1px solid #392d23;
-    }
-
-    .third-line {
+    .mobile-footer {
         display: block;
     }
+}
+
+.col {
+    padding-bottom: 1rem;
+}
+
+.flag-img {
+    margin: 0 0.5rem;
 }
